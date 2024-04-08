@@ -1,0 +1,182 @@
+html, body, .row, #navigation{
+    height: 100%
+}
+
+.container-fluid {
+    width: auto;
+    max-width: 100%;
+}
+  
+html {
+    font-size: 1.2rem
+}
+
+.col {
+padding: 0
+}
+
+.col-2 {
+padding-right: 0
+} 
+
+.nav-container {
+    height: 100%;
+    box-shadow: 3px 0 10px lightgrey;
+  }
+  
+#ava {
+    width: auto;
+    max-width: 20vh;
+    border-radius: 50%;
+    display: block;
+    margin: 10%;
+  }
+
+.ava-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px
+}
+  
+.nav-link {
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+.nav-link:hover {
+    border-radius: 5px;
+    background-color: #EBEBEB;
+    color: black
+  }
+  
+.active {
+    color: #0092F1;
+    border-radius: 5px;
+    background-color: #EBEBEB
+}
+  
+.box {
+    display: flex;
+    align-items:center;
+  }
+  
+.contact-icon {
+    vertical-align: middle;
+    height: 1rem;
+    max-width: 1rem;
+    margin-left: 5px;
+}
+  
+.contact {
+    font-size: 0.75rem;
+    text-decoration: none;
+    margin-left: 5px;
+}
+  
+.contact-container {
+    margin: 0
+}
+
+#home #welcome {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+    border-radius: 40px;
+    position: absolute;
+    top: 60%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    padding: 20px;
+    text-align: center
+}
+
+
+#background {
+    background-image: url('./img/background.jpg');
+    background-size: cover;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    height: 100%;
+}
+
+/* about */
+#about {
+    display: none;
+    margin-left: 3vh;
+    height: auto;
+    max-height: 100vh;
+    overflow: scroll;
+}
+
+.title {
+    color: #0092F1;
+  }
+  
+.icon {
+    height: 1.5rem;
+    margin-left: 1rem
+}
+
+.icon:hover {
+    background-color: #EBEBEB;
+    border-radius: 50%;
+}
+
+.content {
+    display: none;
+    visibility: hidden;
+    animation: slideInOut 1s ease-in-out;
+}
+
+.content.visible {
+    visibility: visible;
+    display: block;
+}
+
+@keyframes slideInOut {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-200px);
+    }
+
+    50% {
+        opacity: 0.5;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+  
+/* projects */
+#projects {
+    display: none;
+    margin-left: 3vh;
+    height: auto;
+    max-height: 100vh;
+    overflow: scroll;
+}
+
+.project-link {
+    text-decoration: none;
+}
+  
+.container-fluid {
+    padding: 0
+}
+
+
+a {
+    cursor: pointer
+}
