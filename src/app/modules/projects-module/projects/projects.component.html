@@ -1,0 +1,20 @@
+<div class="route-container">
+  <div *ngFor="let project of projects">
+    <h2>
+      <a href="{{ project.link }}" target="_blank">{{ project.name }}</a>
+    </h2>
+    <ul>
+      <li>
+        <strong>{{ description }}:</strong> {{ project.description }}<span *ngIf="project.try">.
+          <a href="{{ project.try }}" target="_blank">{{ try }}</a>
+        </span>
+
+      </li>
+      <li>
+        <strong>{{ tech }}:</strong> {{ project.tech }}
+      </li>
+
+    </ul>
+    <hr>
+  </div>
+</div>

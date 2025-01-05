@@ -1,0 +1,28 @@
+<table mat-table [dataSource]=" data " class="mat-elevation-z8 demo-table">
+  <ng-container matColumnDef="course">
+    <th mat-header-cell class="fw-bold" *matHeaderCellDef>{{ headers[0] }}</th>
+    <td mat-cell class="fw-bold" *matCellDef="let element">{{ element.course }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="semester">
+    <th mat-header-cell class="fw-bold text-center" *matHeaderCellDef>{{ headers[1] }}</th>
+    <td mat-cell class="text-center" *matCellDef="let element">{{ element.semester }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="credits">
+    <th mat-header-cell class="fw-bold text-center" *matHeaderCellDef>{{ headers[2] }}</th>
+    <td mat-cell class="text-center" *matCellDef="let element">{{ element.credits }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="grade">
+    <th mat-header-cell class="fw-bold text-center" *matHeaderCellDef>{{ headers[3] }}</th>
+    <td mat-cell class="text-center" *matCellDef="let element">{{ element.grade }}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr
+    mat-row
+    *matRowDef="let row; columns: displayedColumns;"
+  ></tr>
+</table>
+

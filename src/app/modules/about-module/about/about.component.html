@@ -1,0 +1,49 @@
+<div class="route-container">
+  <h2 class="title">{{ personalInfo.label }}</h2>
+  <ul>
+    <li *ngFor="let record of personalInfo.data">
+      <strong>{{ record.label }}:</strong> {{ record.data }}
+    </li>
+  </ul>
+
+  <hr>
+
+  <h2 class="title">{{ skills.label }}</h2>
+  <ul>
+    <li *ngFor="let skill of skills.data">
+      <strong>{{ skill.label }}</strong>
+      <ul>
+        <li *ngFor="let data of skill.data">
+          {{ data }}
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <hr>
+
+  <h2 class="title">{{ education.label }}</h2> {{ education.description }}
+  <ul>
+    <li *ngFor="let edu of education.data">
+      <strong>{{ edu.label }}:</strong> {{ edu.data }}
+    </li>
+  </ul>
+
+  <hr>
+
+  <h2 class="title">{{ achievements.label }}</h2>
+  <ul>
+    <li *ngFor="let achievement of achievements.data">
+      <strong>{{ achievement.label }}:</strong> {{ achievement.data }}
+    </li>
+  </ul>
+
+  <hr>
+
+  <h2 class="title">{{ interests.label }}</h2>
+  <ul>
+    <li *ngFor="let interest of interests.data">
+      <strong>{{ interest }}</strong>
+    </li>
+  </ul>
+</div>

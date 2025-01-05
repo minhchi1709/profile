@@ -1,0 +1,118 @@
+.lang-container {
+  width: 100%;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  flex-direction: row;
+}
+
+.lang-item {
+  flex: 1;
+  border: none;
+  background: none;
+  transition: all 400ms;
+}
+
+.nav-container {
+  height: 100%;
+  box-shadow: 3px 0 10px lightgrey;
+}
+
+#about-item, #project-item, #transcript-item {
+  border-top: 1px solid lightgrey;
+}
+
+#transcript-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid lightgrey;
+}
+
+#ava-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#ava {
+  width: 13vh;
+  border-radius: 50%;
+  display: block;
+  margin: 10%;
+}
+
+.nav-link {
+  color: black;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 100%
+}
+
+.box {
+  display: flex;
+  align-items:center;
+}
+
+.icon {
+  vertical-align: middle;
+  height: 1rem;
+  max-width: 1rem;
+}
+
+.link {
+  font-size: 0.8rem ;
+  text-decoration: none;
+  margin-left: -10px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 5px
+}
+
+.contact > button {
+  margin-right: 1rem;
+}
+
+ul {
+  height: 100%;
+}
+
+.nav-nav-item, .lang-item {
+  border: unset;
+  color: #212121;
+  z-index: 1;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  transition: all 400ms;
+  overflow: hidden;
+}
+
+.nav-nav-item::before, .lang-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #dddddd;
+  z-index: -1;
+  transition: all 200ms
+}
+
+.nav-nav-item:hover, .lang-item:hover {
+  cursor: pointer;
+}
+
+.nav-nav-item:hover::before, .lang-item:hover::before {
+  width: 100%;
+}
+
+.active-item, .active-lang {
+  background-color: lightgrey;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2), 0 -7px 20px rgba(0, 0, 0, 0.2); /* Creates a shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}

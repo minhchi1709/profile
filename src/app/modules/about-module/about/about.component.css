@@ -1,0 +1,47 @@
+.title {
+  color: #0092F1;
+}
+
+.icon {
+  height: 1.5rem;
+  margin-left: 1rem
+}
+
+.icon:hover {
+  background-color: #EBEBEB;
+  border-radius: 50%;
+}
+
+.content {
+  display: none;
+  visibility: hidden;
+  animation: slideInOut 1s ease-in-out;
+}
+
+.content.visible {
+  visibility: visible;
+  display: block;
+
+}
+
+@keyframes slideInOut {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-200px);
+  }
+
+  50% {
+    opacity: 0.5;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+

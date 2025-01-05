@@ -1,0 +1,31 @@
+<!-- Mobile Layout -->
+<mat-sidenav-container *ngIf="isMobile; else desktopLayout" class="mobile-sidenav-container">
+  <!-- Sidenav for Mobile -->
+  <mat-sidenav #sidenav mode="side" class="mobile-sidenav">
+    <app-navigation></app-navigation>
+  </mat-sidenav>
+
+  <!-- Main Content for Mobile -->
+  <mat-sidenav-content>
+    <!-- Toolbar for Mobile -->
+    <mat-toolbar>
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Minhchis</span>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- Desktop Layout -->
+<ng-template #desktopLayout>
+  <div class="desktop-layout">
+    <div class="desktop-sidebar">
+      <app-navigation></app-navigation> <!-- Desktop navigation menu -->
+    </div>
+    <div class="desktop-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</ng-template>

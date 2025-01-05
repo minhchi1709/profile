@@ -1,0 +1,52 @@
+<ul class="nav flex-column nav-container">
+  <li class="nav-item">
+    <a id="ava-container" class="nav-link" aria-current="page" routerLink="/">
+      <img id="ava" src="./assets/profile.jpg" alt="profile">
+    </a>
+  </li>
+  <li class="nav-nav-item" id="about-item" routerLinkActive="active-item">
+    <a class="nav-link" id="about-link" aria-current="page" routerLink="/about">
+      {{ about }}
+    </a>
+  </li>
+  <li class="nav-nav-item" id="project-item" routerLinkActive="active-item">
+    <a class="nav-link" id="project-link" routerLink="/projects">{{ projects }}</a>
+  </li>
+  <li class="nav-nav-item" id="transcript-item" routerLinkActive="active-item">
+    <a class="nav-link" id="transcript-link" routerLink="/transcript">{{ transcript }}</a>
+  </li>
+
+  <div class="contact-container">
+    <div class="contact">
+      <button mat-mini-fab color="primary">
+        <mat-icon>phone_in_talk</mat-icon>
+      </button>
+      <a href="tel:+4917680676239" class="link">+49 176 80676239</a>
+    </div>
+
+    <div class="contact">
+      <button mat-mini-fab>
+        <mat-icon>mail</mat-icon>
+      </button>
+      <a href="mailto:diepminhchi170903@gmail.com" class="link">diepminhchi170903&#64;gmail.com</a>
+    </div>
+
+    <div class="contact">
+      <button mat-mini-fab color="primary">
+        <mat-icon class="linkedin-image-icon"></mat-icon>
+      </button>
+      <a href="https://www.linkedin.com/in/diepminhchi/" class="link" target="_blank">diepminhchi</a>
+    </div>
+  </div>
+
+  <div class="lang-container">
+    <button class="lang-item" id="en" (click)="setLang('en')" matTooltip="English" [matTooltipPosition]="'below'" #lang>EN</button>
+    <button class="lang-item" id="de" (click)="setLang('de')" matTooltip="Deutsch" [matTooltipPosition]="'below'" #lang>DE</button>
+    <button class="lang-item" id="vi" (click)="setLang('vi')" matTooltip="Tiếng Việt" [matTooltipPosition]="'below'" #lang>VI</button>
+  </div>
+</ul>
+
+
+
+
+

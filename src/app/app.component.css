@@ -1,0 +1,52 @@
+#main-content {
+  padding: 0;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+/* Styles for Mobile Layout */
+.mobile-sidenav-container {
+  height: 100vh; /* Full height for mobile */
+  display: flex;
+  flex-direction: column; /* Toolbar at the top */
+}
+
+.mobile-sidenav {
+  width: 250px; /* Adjust sidenav width */
+  background: #f5f5f5;
+  box-shadow: 6px 0 6px rgba(0, 0, 0, 0.1);
+}
+
+mat-sidenav-content {
+  overflow-y: auto; /* Enable scrolling */
+}
+
+/* Toolbar styles for proper alignment */
+mat-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between elements */
+  height: 64px;
+  background-color: #f5f5f5;
+}
+
+/* Desktop Layout Styles */
+.desktop-layout {
+  display: flex;
+  height: 100vh;
+}
+
+.desktop-sidebar {
+  flex-shrink: 0;
+  background: #f5f5f5;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-right: 1px solid lightgrey;
+  box-shadow: 6px 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.desktop-content {
+  flex-grow: 1;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+

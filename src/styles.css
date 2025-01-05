@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+html, body, app-root, app-navigation {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 1.1rem;
+  @media (max-width: 768px) {
+    font-size: 0.9rem
+  }
+}
+
+.container{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.route-container {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.mat-icon.linkedin-image-icon {
+  width: 24px; /* Customize size as needed */
+  height: 24px;
+  background-image: url('assets/linkedin.png'); /* Referencing the custom image */
+  background-size: contain; /* Ensure it scales correctly */
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block; /* Required for proper alignment */
+}
