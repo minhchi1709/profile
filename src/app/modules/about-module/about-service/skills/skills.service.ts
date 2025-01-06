@@ -17,8 +17,7 @@ export class SkillsService {
         data: [
           'Java: Spring Boot',
           'Javascript: NodeJS, Express',
-          'Python: Django, Flask, FastAPI',
-          'C#: .NET, ASP.NET'
+          'Python: Django, Flask, FastAPI'
         ]
       },
       {
@@ -56,8 +55,7 @@ export class SkillsService {
         data: [
           'Java: Spring Boot',
           'Javascript: NodeJS, Express',
-          'Python: Django, Flask, FastAPI',
-          'C#: .NET, ASP.NET'
+          'Python: Django, Flask, FastAPI'
         ]
       },
       {
@@ -95,8 +93,7 @@ export class SkillsService {
         data: [
           'Java: Spring Boot',
           'Javascript: NodeJS, Express',
-          'Python: Django, Flask, FastAPI',
-          'C#: .NET, ASP.NET'
+          'Python: Django, Flask, FastAPI'
         ]
       },
       {
